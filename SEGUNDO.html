@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VEHICULOS</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom right, #ffffff, #a8e6cf); /* Degradado de blanco a verde */
+            color: black; /* Color del texto */
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            font-size: 40px;
+            color: #ff4500; /* Color del título */
+        }
+        .image-grid {
+            display: grid; /* Usar grid para organizar las imágenes */
+            grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+            gap: 20px; /* Espacio entre las imágenes */
+            justify-items: center; /* Centrar las imágenes en cada celda */
+            margin: 20px; /* Margen alrededor de la cuadrícula */
+        }
+        .image-container {
+            position: relative;
+            margin-bottom: 30px; /* Aumentar el margen inferior */
+        }
+        .image-container img {
+            height: 400px; /* Aumentar la altura de las imágenes */
+            width: 400px; /* Aumentar el ancho de las imágenes */
+            transition: 0.3s; /* Transición suave */
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.7); /* Color blanco con opacidad */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0; /* Oculto por defecto */
+            transition: opacity 0.3s; /* Transición suave */
+        }
+        .image-container:hover .overlay {
+            opacity: 1; /* Mostrar superposición al pasar el cursor */
+        }
+        .overlay img {
+            width: 95%; /* Ajustar el tamaño de la imagen de superposición al 90% */
+            height: auto; /* Mantener la proporción de la imagen */
+            object-fit: contain; /* Mantener la proporción de la imagen */
+        }
+        .nav-links {
+            display: flex; /* Usar flexbox para centrar las imágenes */
+            justify-content: center; /* Centrar horizontalmente */
+            margin: 20px 0; /* Margen superior e inferior */
+        }
+        .nav-links img {
+            height: 50px;
+            width: 100px;
+            margin: 5px; /* Espacio entre las imágenes */
+        }
+    </style>
+</head>
+<body>
+    <h1>VEHICULOS</h1>
+    <div class="image-grid">
+        <div class="image-container">
+            <img src="imagenes/2.png" alt="Herramienta 1">
+            <div class="overlay">
+                <img src="imagenes/2.1.png" alt="Overlay 1"> <!-- Cambia la ruta de la imagen según sea necesario -->
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="imagenes/3.png" alt="Herramienta 2">
+            <div class="overlay">
+                <img src="imagenes/3.1.png" alt="Overlay 2"> <!-- Cambia la ruta de la imagen según sea necesario -->
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="imagenes/4.png" alt="Herramienta 3">
+            <div class="overlay">
+                <img src="imagenes/4.1.png" alt="Overlay 3"> <!-- Cambia la ruta de la imagen según sea necesario -->
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="imagenes/5.png" alt="Herramienta 1">
+            <div class="overlay">
+                <img src="imagenes/5.1.png" alt="Overlay 1"> <!-- Cambia la ruta de la imagen según sea necesario -->
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="imagenes/6.png" alt="Herramienta 2">
+            <div class="overlay">
+                <img src="imagenes/6.1.png" alt="Overlay 2"> <!-- Cambia la ruta de la imagen según sea necesario -->
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="imagenes/7.png" alt="Herramienta 3">
+            <div class="overlay">
+                <img src="imagenes/7.1.png" alt="Overlay 3"> <!-- Cambia la ruta de la imagen según sea necesario -->
+            </div>
+        </div>
+    
+    <div class="nav-links">
+        <a href="PRIMERO.html"><img src="imagenes/323.png" alt="Primero"></a>
+        <a href="SEGUNDO.html"><img src="imagenes/123.png" alt="Segundo"></a>
+        <a href="TERCERO.html"><img src="imagenes/321.png" alt="Tercero"></a>
+        <!-- <a href="CUARTO.html"><img src="imagenes/121.png" alt="Cuarto"></a> -->
+    </div>
+</body>
+</html>
